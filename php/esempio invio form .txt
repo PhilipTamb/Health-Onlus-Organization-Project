@@ -1,0 +1,30 @@
+
+<?php
+require 'connection_db.php';
+
+if(isset( $_POST["cognome"]) && isset( $_POST["indirizzo"]) && isset( $_POST[""]) && isset( $_POST["tel"])  ){
+
+    
+    $cognome  = mysqli_real_escape_string($conn,  $_POST["cognome"] );//  = mysqli_real_escape_string($conn, ); riceve in ingresso una stringa e effettua l 'enscape dei carattri evitando l'sqlinjection
+    $nome = mysqli_real_escape_string($conn, $_POST["nome"]);     
+    $tel  = mysqli_real_escape_string($conn, $_POST["tel"]);
+    $indirizzo  = mysqli_real_escape_string($conn, $_POST["indirizzo"]);
+    $  = mysqli_real_escape_string($conn, $_POST[""]);
+    $  = mysqli_real_escape_string($conn, $_POST[""]);
+    $  = mysqli_real_escape_string($conn, $_POST[""]);
+    $  = mysqli_real_escape_string($conn, $_POST[""]);
+    
+
+    $query = " insert into ordine ( cognome, nome, indirizzo, citta, tel, data_creazione, ora_creazione, affetto, peso, mezzo, ora_esecuzione, casa,cliente, richiedente, tipo_richiesta, data_esecuzione, note, luogo_servizio) values ('".$cognome."', '".$nome."', '".$indirizzo."', '".$citta."', '".$tel."','".$data_creazione[0]."','".$ora_creazione[0]."','".$affetto."','".$peso."','".$mezzo."','".$ora_esecuzione."','".$casa."','".$cliente ."','".$richiedente ."','".$tipo_richiesta."','".$data_esecuzione ."','".$note."','".$luogo_servizio."')";
+    $res = mysqli_query($conn,$query);
+
+    mysqli_free_result($result1);
+    mysqli_free_result($result2);
+    mysqli_close($conn);
+
+    header("Location:../dashboard.php"); 
+    exit;
+}else{
+    
+}
+    ?>

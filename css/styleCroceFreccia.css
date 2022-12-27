@@ -1,0 +1,85 @@
+
+
+.arrow{
+    display:flex;
+  justify-content: center;
+  align-items: center;
+    height: 100%;
+    width: 100%;
+}    
+
+.cross {
+    background: whitesmoke;
+    height: 80%;
+    position: relative;
+    width: 10%;
+    z-index: 1;
+  }
+  .cross:after {
+    background: whitesmoke;
+    content: "";
+    height: 12%;
+    left: -335%;
+    position: absolute;
+    top: 42%;
+    width: 780%;
+    z-index: 1;
+  }
+
+.arrow:hover{
+    transition-duration: 0.5s;
+  transform:rotate(360deg);
+
+}
+
+/* freccia */
+.containerArrow{
+  margin:2%;
+    height: 50px;
+    width: 50px;
+    background: rgb(1, 112, 1);
+  border-radius: 100%;
+}
+.containerCross{
+  z-index: 0;
+    margin:2%;
+  transform:rotate(45deg);
+  height: 50px;
+  width: 50px;
+  background: red;
+border-radius: 100%;
+}
+
+.arrow{
+    display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.line{
+    height: 10%;
+    width: 40%;
+    background: white; 
+  
+}
+
+.tip{
+  margin:0;
+  display:flex;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-left: 20px solid white;
+  border-bottom: 10px solid transparent;
+}
+.containerArrow:hover{
+  background: green;
+}
+.arrow:hover{
+    transition-duration: 0.5s;
+  transform:rotate(360deg);
+
+}

@@ -1,0 +1,251 @@
+
+.pageContainerMobile {
+    display: none;
+}
+
+#boardContainer{
+    margin: 4%;
+    width: 50%;
+}
+#image{
+    margin-top: 2.5% 0% 2.5 0%;
+    width: 50%;
+}
+
+
+.container-form {
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 7%;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(42, 48, 79);
+}
+
+.tittle-form{
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-patient {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 10px;
+}
+form{
+    width: 100%;
+}
+.form-means {
+    display: flex;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.leftSide {
+    width: 100%;
+
+}
+
+
+
+.p-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0% 5%;
+}
+
+.p-form p {
+
+    width: 45%;
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+.p-form input {
+    height: 30px;
+    width: 50%;
+    padding: 0;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid rgb(23, 26, 41);
+    border-radius: 8px;
+    margin: 5px 0px 2.5px 0px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.p-form select {
+    height: 32px;
+    width: 50%;
+    padding: 0;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid rgb(23, 26, 41);
+    border-radius: 8px;
+    margin: 5px 0px 2.5px 0px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container-div-space {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.div-space {
+    height: 5px;
+    width: 100%;
+    background-color: rgb(23, 26, 41);
+}
+
+.div-submit{
+    padding-bottom: 2%;
+
+}
+
+#submit{
+    cursor: pointer;
+    background: green;
+    border:2px solid green;
+    border-radius: 3px;
+    margin: 1% 4% 1% 73% ;
+}
+.errore{
+    width: 100%;
+    height: 5%;
+    color: red;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+#buttonNegative{
+    cursor: pointer;
+background: red;
+margin: 3% 2% 0.5% 70%;
+padding: 0.9%;
+height: 10%;
+width: 10%;
+font-size: 80%;
+border-radius: 3px;
+text-align: center;
+border-radius: 3px;
+display:flex;
+text-decoration: none;
+font-family: 'Ubuntu', sans-serif;
+align-items: center;
+justify-content: center;
+border:none;
+color:black;
+}
+
+#buttonPositive{
+    cursor: pointer;
+    background: green;
+    margin: 3% 2% 0.5% 2%;
+    padding: 0.9%;
+    height: 10%;
+    width: 10%;
+    font-size: 80%;
+    text-align: center;
+    border-radius: 3px;
+    display:flex;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    color:black;
+}
+
+
+@media(max-width: 700px) {
+    .pageContainer {
+        display: none;
+    }
+.container-form{
+    width: 98%;
+}
+
+.tittle-form{
+    text-align: center;
+}
+    .leftSide{
+        width: 100%;
+        border: none;
+        margin: 0;
+    }
+    .form-patient {
+        background-color: rgb(42, 48, 79);
+    }
+    .form-means {
+        padding-top: 10px;
+        background-color: rgb(42, 48, 79);
+    }
+    .p-form {
+        margin: 0;
+        justify-content: space-between;
+    }
+    .p-form p {
+        width: 35%;
+        margin: 1%;
+    }
+    .p-form input {
+        height: 38px;
+        width: 65%;
+        margin: 1%;
+    }
+    .p-form select {
+        height: 40px;
+        width: 60%;
+    }
+
+
+
+    #submit{
+        background: green;
+        border:2 px solid green;
+        border-radius: 3px;
+        margin: 3% 4% 3% 75% ;
+    }
+
+ 
+    .pageContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .containerButton{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+    }
+
+    #buttonNegative{
+        display: flex;
+        margin: 2% 0% 1% 65%;
+        width: 20%;
+        }
+
+        #buttonPositive{
+            display: flex;
+            margin: 1%;
+            width: 20%;
+            
+        }
+}
+

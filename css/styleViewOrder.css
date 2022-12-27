@@ -1,0 +1,202 @@
+.conteinerOrder{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    margin:1%;
+    width: 95%;
+    height: auto;
+    background: #2A304F;
+    padding: 1%;
+
+
+}
+
+.containerInfo{
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+
+}
+
+.orderContent{
+    flex-wrap: wrap;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+    height: auto;
+    width: 45%;
+
+}
+
+.orderCamp{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    padding: 1%;
+    width: 30%;
+    height: 100%;
+    font-size: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+.orderInfo{
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    margin: 1%;
+    padding: 1%;
+    width: 50%;
+    height: auto;
+    font-size: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    border-bottom: 2px solid rgb(23, 26, 41);
+    border-radius: 2px;
+
+}
+
+.containerButton{
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: end;
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+
+
+
+#buttonNegative{
+    background: red;
+    margin: 3% 2% 0.5% 70%;
+    padding: 0.9%;
+    height: 10%;
+    width: 10%;
+    font-size: 80%;
+    border-radius: 3px;
+    text-align: center;
+    border-radius: 3px;
+    display:flex;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    color:black;
+}
+
+#buttonRigth{
+    cursor: pointer;
+    background: green;
+    margin: 3% 2% 0.5% 2%;
+    padding: 1.5%;
+    height: 12%;
+    width: 12%;
+    font-size: 80%;
+    text-align: center;
+    border-radius: 3px;
+    display:flex;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    color:black;
+}
+#buttonLeft{
+    cursor: pointer;
+    background: green;
+    margin: 3% 2% 0.5% 60%;
+    padding: 1.5%;
+    height: 12%;
+    width: 12%;
+    font-size: 80%;
+    text-align: center;
+    border-radius: 3px;
+    display:flex;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    color:black;
+}
+
+
+@media(max-width: 700px) {
+    .pageContainerMobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .menu{
+        display: none;
+    }
+    .pageContainer {
+        display: flex;
+        flex-direction: column;
+        margin-top: ;
+        width: 100%;
+        height: 100%;
+    }
+    .conteinerOrder{ 
+        display: flex;
+        flex-direction: column;
+        margin:1%;
+        width: 90%;
+        height: auto;
+        background: #2A304F;
+        padding: 1%;
+
+    }
+
+    .orderContent{
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 10px;
+        height: 30%;
+        width: 100%;
+    }
+
+    .orderCamp{
+
+        width: 30%;
+        height: 100%;
+    }
+
+    .orderInfo{
+        width: 50%;
+    }
+
+    .containerButton{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+    }
+
+    #buttonNegative{
+        display: flex;
+        margin: 1%;
+        width: 20%;
+        }
+
+        #buttonPositive{
+            display: flex;
+            margin: 1%;
+            width: 20%;
+            
+        }
+}
+

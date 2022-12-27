@@ -1,0 +1,348 @@
+
+.pageContainerMobile {
+    display: none;
+}
+
+.container-form {
+    margin-top: 1%;
+    margin-bottom: 7%;
+    width: 95%;
+    height: 100%;
+    background-color: rgb(42, 48, 79);
+}
+
+.tittle-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-patient {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.form-means {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.leftSide {
+    width: 50%;
+    border-right: 2px solid rgb(23, 26, 41);
+}
+
+.rightSide {
+    width: 50%;
+}
+
+.p-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 10px;
+}
+
+.p-form p {
+    margin: 0;
+    width: 50%;
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+.p-form input {
+    height: 30px;
+    width: 50%;
+    padding: 0;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid rgb(23, 26, 41);
+    border-radius: 8px;
+    margin: 5px 0px 2.5px 0px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.p-form select {
+    height: 32px;
+    width: 50%;
+    padding: 0;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid rgb(23, 26, 41);
+    border-radius: 8px;
+    margin: 5px 0px 2.5px 0px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container-div-space {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.div-space {
+    height: 5px;
+    width: 100%;
+    background-color: rgb(23, 26, 41);
+}
+
+
+#submit{
+    cursor: pointer;
+    background: green;
+    border:2px solid green;
+    border-radius: 3px;
+    margin: 1% 4% 1% 80% ;
+}
+.errore{
+    width: 100%;
+    height: 5%;
+    color: red;
+    text-align: center;
+    padding-bottom: 2%;
+}
+.containerPrint{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conteinerOrder{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    margin:1%;
+    width: 80%;
+    height: auto;
+    background: #2A304F;
+    padding: 1%;
+
+}
+
+.containerInfo{
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+}
+
+.orderContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    width: 45%;
+    margin: 1%;
+    
+}
+
+.orderCamp{
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1%;
+    width: 30%;
+    height: auto;
+    font-size: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+.orderInfo{
+    flex-direction: row;
+    text-align: center;
+    margin: 0;
+    padding: 1%;
+    min-width: 40%;
+    max-width: auto;
+    height: auto;
+    font-size: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    border-bottom: 2px solid rgb(23, 26, 41);
+}
+
+.containerButton{
+ 
+    flex-direction: row;
+    justify-content: end;
+    height: auto;
+    width: 100%;
+    display: flex;
+
+}
+
+
+
+#buttonNegative{
+    cursor: pointer;
+background: red;
+margin: 3% 2% 0.5% 70%;
+padding: 0.9%;
+height: 10%;
+width: 10%;
+font-size: 80%;
+border-radius: 3px;
+text-align: center;
+border-radius: 3px;
+display:flex;
+text-decoration: none;
+font-family: 'Ubuntu', sans-serif;
+align-items: center;
+justify-content: center;
+border:none;
+color:black;
+}
+
+#buttonPositive{
+    cursor: pointer;
+    background: green;
+    margin: 3% 2% 0.5% 2%;
+    padding: 0.9%;
+    height: 10%;
+    width: 10%;
+    font-size: 80%;
+    text-align: center;
+    border-radius: 3px;
+    display:flex;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    color:black;
+}
+
+@media(max-width: 700px) {
+    .pageContainer {
+        display: none;
+    }
+    .container-form{
+        width: 98%;
+    }
+    .leftSide{
+        width: 100%;
+        border: none;
+    }
+    .rightSide{
+        width: 100%;
+    }
+    .pageContainerMobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .form-patient {
+        flex-direction: column;
+        background-color: rgb(42, 48, 79);
+    }
+    .form-means {
+        padding: 0;
+        padding-top: 10px;
+        flex-direction: column;
+        background-color: rgb(42, 48, 79);
+    }
+    .p-form input {
+        height: 38px;
+        width: 80%;
+    }
+    .p-form select {
+        height: 40px;
+        width: 80%;
+    }
+    .menu {
+        margin: 0;
+        padding: 0;
+        height: 0px;
+        overflow: hidden;
+    }
+
+    #submit{
+        background: green;
+        border:2 px solid green;
+        border-radius: 3px;
+        margin: 3% 4% 3% 75% ;
+    }
+
+    .pageContainerMobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .pageContainer {
+        display: flex;
+        flex-direction: column;
+        margin-top: ;
+        width: 100%;
+        height: 100%;
+    }
+    .containerInfo{
+     margin:0px;
+     padding:0px;
+    }
+    .conteinerOrder{ 
+        display: flex;
+        flex-direction: column;
+        margin:1%;
+        width: 90%;
+        height: auto;
+        background: #2A304F;
+        padding: 1%;
+
+    }
+
+    .orderContent{
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 10px;
+        height: 30%;
+        width: 100%;
+    }
+
+    .orderCamp{
+
+        width: 30%;
+        height: 100%;
+    }
+
+    .orderInfo{
+        width: 50%;
+    }
+
+    .containerButton{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #buttonNegative{
+    display: flex;
+    margin: 2% 0% 1% 65%;
+    width: 20%;
+    }
+
+    #buttonPositive{
+        display: flex;
+        margin: 1%;
+        width: 20%;
+        
+    }
+}
+
+
+
